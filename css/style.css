@@ -14,6 +14,7 @@ body {
     margin: 0;
     overflow: hidden;
     align-items: center;
+    background-color: rgb(255, 252, 244);
 }
 
 .nav-left {
@@ -29,14 +30,14 @@ button {
     font-size: 1em;
     border: none;
     background-color: black;
-    color: white;
+    color: rgb(255, 248, 232);
     transition: background-color 0.4s;
     cursor: pointer;
     border-radius: 20px;
 }
 
 button:hover {
-    background: white;
+    background: rgb(255, 248, 232);
     color: black;
 }
 
@@ -129,9 +130,9 @@ ul {
 }
 
 li {
-    color: white;
+    color: rgb(255, 248, 232);
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: MateSC;
     transition: background-color 0.4s;
     transition: font-size 0.2s;
     padding: 12px 0px;
@@ -147,5 +148,5 @@ li {
 li:hover {
     background-color: rgba(255, 255, 245, 0.5);
     font-size: 1.25em;
-    text-decoration-color: rgba(255, 255, 245, 1);
+    text-decoration-color: rgba(255, 248, 230, 1);
 }
