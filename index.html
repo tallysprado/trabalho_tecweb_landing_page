@@ -23,7 +23,7 @@
                     <h1>
                     Desenvolvimento Inteligente de Software
                     </h1>
-                    <h2>
+                    <h2 id='subtitle'>
                     Página de projetos Tecnologias Web.
                     </h2>
                 </div>
@@ -31,13 +31,29 @@
             <div class='column column2'>
                 <nav class='nav-right'>
                     <ul>
-                        <li>Serviços</li>
-                        <li>Preços</li>
-                        <li>Blog</li>
-                        <li>Contato</li>
+                        <li onmouseover="servicos_text()" id='servicos'>Serviços</li>
+                        <li onmouseover="precos_text()" id='precos'>Preços</li>
+                        <li onmouseover="blog_text()"id='blog'>Blog</li>
+                        <li onmouseover="contato_text()" id='contato'>Contato</li>
                     </ul>
                 </nav>
+                <div class='right-content'>
+                    <h1 >
+                    
+                    </h1>
+                    <h2>
+
+                    </h2>
+                </div>
             </div>
         </section>
     </body>
+    <script>
+        function servicos_text(){
+            document.getElementById('subtitle').innerHTML = "Construa seu site!"
+        }
+        function precos_text(){
+            document.getElementById('subtitle').innerHTML = "Construa seu site!"
+        }
+    </script>
 </html>
