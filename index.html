@@ -3,7 +3,7 @@
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>O melhor desenvolvedor</title>
+        <title>TDev</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -21,11 +21,18 @@
 
                 <div class='presentation'>
                     <h1>
-                    Desenvolvimento Inteligente de Software
+                    Empresa Projetos
                     </h1>
                     <h2 id='subtitle'>
                     Página de projetos Tecnologias Web.
                     </h2>
+                    <h3>
+                    Desenvolvendo <i>software</i> de qualidade de forma ágil.
+                    A melhor empresa brasileira de desenvolvimento de apps.
+                    </h3>
+                    <button>
+                        Contrate agora!
+                    </button>
                 </div>
             </div>
             <div class='column column2'>
@@ -38,8 +45,7 @@
                     </ul>
                 </nav>
                 <div class='right-content'>
-                    <h1 >
-                    
+                    <h1 id='right-title'>
                     </h1>
                     <h2>
 
@@ -49,11 +55,19 @@
         </section>
     </body>
     <script>
+        var element = document.getElementById('subtitle')
         function servicos_text(){
-            document.getElementById('subtitle').innerHTML = "Construa seu site!"
+            element.innerHTML = "Construa seu site!"
         }
         function precos_text(){
-            document.getElementById('subtitle').innerHTML = "Construa seu site!"
+            element.innerHTML = "Com os melhores preços do mercado!"
         }
+        function blog_text(){
+            element.innerHTML = "Acesse nosso portfolio."            
+        }
+        function contato_text(){
+            element.innerHTML = "Nos mande um e-mail!"
+        }
+        
     </script>
 </html>
