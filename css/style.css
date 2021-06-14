@@ -1,3 +1,13 @@
+@font-face {
+    font-family: MateSC;
+    src: url('/font/MateSC-Regular.ttf');
+}
+
+@font-face {
+    font-family: Josefin;
+    src: url('/font/JosefinSans.ttf');
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -36,11 +46,13 @@ button:hover {
     margin: 0;
     text-shadow: 1px 1px 3px #000;
     width: 200px;
+    font-family: MateSC;
 }
 
 .presentation h3 {
     color: rgba(0, 0, 0, 0.7);
     font-size: 1.5em;
+    font-family: Josefin;
 }
 
 .right-content {
@@ -51,36 +63,13 @@ button:hover {
     height: 50vh;
 }
 
-.right-content h2 {
-    color: white;
-    text-align: center;
-    margin: 0 5em;
-}
-
-.animation {
-    animation: 0.5s fadeIn;
-}
-
-.right-content h1 {
-    color: white;
-    animation: 0.5s fadeIn;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-}
-
 .presentation h2 {
     text-align: right;
     color: gray;
     font-size: large;
     align-self: right !important;
     width: max-content;
+    font-family: Josefin;
 }
 
 .presentation {
@@ -150,9 +139,13 @@ li {
     text-align: center;
     flex: 1;
     cursor: pointer;
+    text-decoration: underline 0.15em rgba(255, 255, 245, 0);
+    transition: text-decoration-color 300ms;
+    text-underline-offset: 0.2em;
 }
 
 li:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 245, 0.5);
     font-size: 1.25em;
+    text-decoration-color: rgba(255, 255, 245, 1);
 }
