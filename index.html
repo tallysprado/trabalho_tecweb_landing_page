@@ -40,7 +40,7 @@
             <div class='column column2'>
                 <nav class='nav-right'>
                     <ul>
-                        <li onmouseover="servicos_text()" id='servicos'>Serviços</li>
+                        <li onclick="show()" onmouseover="servicos_text()" id='servicos'>Serviços</li>
                         <li onmouseover="precos_text()" id='precos'>Preços</li>
                         <li onmouseover="blog_text()"id='blog'>Blog</li>
                         <li onclick="enter_view()" onmouseover="contato_text()" id='contato'>Contato</li>
@@ -116,6 +116,9 @@
         function remover(){
             let box = document.getElementById("msg-box")
             box.removeChild(box.lastElementChild)
+        }
+        function show(){
+            window.alert("Desenvolvido por:\nTallys C. Prado\nCícero Romão\nEduardo")
         }
     </script>
 </html>
