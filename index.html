@@ -32,7 +32,7 @@
                     A <b>melhor</b> empresa brasileira de desenvolvimento de apps.
                     Agilidade e qualidade é o lema.
                     </h3>
-                    <button>
+                    <button onclick='enter_view()'>
                         Contrate agora!
                     </button>
                 </div>
@@ -43,7 +43,7 @@
                         <li onmouseover="servicos_text()" id='servicos'>Serviços</li>
                         <li onmouseover="precos_text()" id='precos'>Preços</li>
                         <li onmouseover="blog_text()"id='blog'>Blog</li>
-                        <li onmouseover="contato_text()" id='contato'>Contato</li>
+                        <li onclick="enter_view()" onmouseover="contato_text()" id='contato'>Contato</li>
                     </ul>
                 </nav>
                 <div class='right-content'>
@@ -52,6 +52,31 @@
                     <h2>
 
                     </h2>
+                </div>
+            </div>
+        </section>
+
+        <section id='contato-view'>
+            <button onclick="voltar()" class='voltar-button'>
+                Voltar
+            </button>
+            <div class='contato-box'>
+                <p >
+                Nome:
+                </p>
+                <input id='nome' placeholder='Digite aqui...'/>
+                <p>
+                Mensagem:
+                </p>
+                <input  id='mensagem' type='text' placeholder='Digite aqui...'/>
+                <button onclick='enviar()'>
+                Adicionar
+                </button>
+                <button onclick='remover()'>
+                Excluir
+                </button>
+                <div id='msg-box'>
+                
                 </div>
             </div>
         </section>
@@ -70,6 +95,27 @@
         function contato_text(){
             element.innerHTML = "Nos mande um e-mail!"
         }
-        
+        function enter_view(){
+            document.getElementById('contato-view').scrollIntoView({behavior: "smooth", block: "center"})
+            console.log('ok')
+        }
+        function voltar(){
+            document.getElementById('main-content').scrollIntoView({behavior: "smooth", block: "center"})
+        }
+        var mensagens = []
+        function enviar(){
+            var p = document.createElement('p')
+            var nome = document.getElementById('nome').value
+            var msg = document.getElementById('mensagem').value
+            var text = document.createTextNode("Mensagem de "+nome+": "+msg)
+            var msgbox = document.getElementById('msg-box')
+            
+            p.appendChild(text)
+            msgbox.appendChild(p)
+        }
+        function remover(){
+            let box = document.getElementById("msg-box")
+            box.removeChild(box.lastElementChild)
+        }
     </script>
 </html>

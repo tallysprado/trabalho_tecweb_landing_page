@@ -8,12 +8,49 @@
     src: url('/font/JosefinSans.ttf');
 }
 
+#contato-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.contato-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.voltar-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.voltar-button {
+    align-self: left;
+}
+
+a {
+    text-decoration: none;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+a:link,
+a:visited {
+    color: rgb(255, 248, 232);
+}
+
 body {
     display: flex;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     overflow: hidden;
     align-items: center;
+    flex-direction: column;
     background-color: rgb(255, 252, 244);
 }
 
